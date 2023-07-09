@@ -1,24 +1,18 @@
 from data.person import Person
 
-
 class Client(Person):
-    def __init__(self, client_id, ID, name, age, phone_number):
-        super().__init__(ID, name, age, phone_number)
+    def __init__(self, client_id, ID, name, age, phone_number,):
         self.client_id = client_id
+        self.ID = ID
+        self.name = name
+        self.age = age
+        self.phone_number = phone_number
         self.shopping_list = []
         self.purchased_products = []
-
-    def add_product_to_shopping_list(self, product):
-        self.shopping_list.append(product)
 
     def remove_product_from_shopping_list(self, product):
         if product in self.shopping_list:
             self.shopping_list.remove(product)
-
-    def buy_products(self, cashier):
-        for product in self.shopping_list:
-            cashier.purchase_product(self, product)
-        self.shopping_list.clear()
 
     def __str__(self):
         print(f"""customer id: {self.client_id}

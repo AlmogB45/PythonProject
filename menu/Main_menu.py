@@ -1,3 +1,6 @@
+import self as self
+
+from entities import chief_manager
 from entities.chief_manager import ChiefManager
 from menu.client_menu import ClientMenu
 from menu.orderer_menu import OrdererMenu
@@ -7,11 +10,9 @@ from menu.chief_manager_menu import ChiefManagerMenu
 
 
 class MainMenu:
-
     def initialize_application(self):
-        # Initialize the necessary objects
-        chief_manager = ChiefManager(employee_number="1",employee_type="m", ID="123", name="patrick",age="21",
-                                     phone_number="0232")
+
+
 
         # Initialize the menus
         client_menu = ClientMenu()
@@ -24,24 +25,45 @@ class MainMenu:
         while True:
             print("-------- Super App --------")
             print("1. Client")
-            print("2. Orderer")
-            print("3. Cashier")
-            print("4. Shift Manager")
-            print("5. Chief Manager")
-            print("6. Exit")
+            print("2. Worker")
 
             choice = input("Enter your choice: ")
             if choice == "1":
                 client_menu.display_menu()
             elif choice == "2":
-                orderer_menu.display_menu()
-            elif choice == "3":
-                cashier_menu.display_menu()
-            elif choice == "4":
-                shift_manager_menu.display_menu()
-            elif choice == "5":
-                chief_manager_menu.display_menu()
-            elif choice == "6":
-                break
-            else:
-                print("Invalid choice. Please try again.")
+                username = input("Enter your username: ")
+                password = input("Enter your password: ")
+
+                if self.validate_credentials(username, password):
+                    while True:
+                        print("-------- Worker Menu --------")
+                        print("1. Cashier")
+                        print("2. Shift Manager")
+                        print("3. Chief Manager")
+                        print("4. Back to Main Menu")
+
+                        worker_choice = input("Enter your choice: ")
+                        if worker_choice == "1":
+                            cashier_menu.display_menu()
+                        elif worker_choice == "2":
+                            shift_manager_menu.display_menu()
+                        elif worker_choice == "3":
+                            chief_manager_menu.display_menu()
+                        elif worker_choice == "4":
+                            break
+                        else:
+                            print("Invalid choice. Please try again.")
+
+    def validate_credentials(self, username, password):
+        # Check the credentials against a file
+        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\menu\\credentials.txt", "r") as file:
+            for line in file:
+                stored_username, stored_password = line.strip().split(",")
+                if username == stored_username and password == stored_password:
+                    return True
+        return False
+
+
+# Example usage
+# main_menu = MainMenu()
+# main_menu.initialize_application()

@@ -3,7 +3,7 @@ from entities.employee import Employee
 
 
 class ChiefManager(Employee,IManager):
-    def __init__(self, employee_number,employee_type, ID, name, age, phone_number):
+    def __init__(self, employee_number: object, employee_type: object, ID: object, name: object, age: object, phone_number: object) -> object:
         super().__init__(employee_number,employee_type, ID, name, age, phone_number)
 
     def add_employee(self, employee, employee_list):

@@ -1,0 +1,3 @@
+Apple,Fruit,10
+Milk,Drink,20
+Bread,Food,5
