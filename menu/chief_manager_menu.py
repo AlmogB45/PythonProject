@@ -1,9 +1,8 @@
 from entities.employee import Employee
 import sys
 
-
-
 class ChiefManagerMenu:
+
     def display_menu(self):
         while True:
             print("-------- Chief Manager Menu --------")

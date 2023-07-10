@@ -1,12 +1,10 @@
 from data.person import Person
 
+
 class Client(Person):
-    def __init__(self, client_id, ID, name, age, phone_number,):
+    def __init__(self, client_id, ID, name, age):
+        super().__init__(ID, name, age)
         self.client_id = client_id
-        self.ID = ID
-        self.name = name
-        self.age = age
-        self.phone_number = phone_number
         self.shopping_list = []
         self.purchased_products = []
 
