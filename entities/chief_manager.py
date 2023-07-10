@@ -1,13 +1,17 @@
 from data.manager import IManager
-from entities.employee import Employee
+from entities.employee import Employee, Person
 
 
-class ChiefManager(Employee,IManager):
+class ChiefManager(Employee, IManager):
     def __init__(self, employee_number: object, employee_type: object, ID: object, name: object, age: object, phone_number: object) -> object:
-        super().__init__(employee_number,employee_type, ID, name, age, phone_number)
+        super().__init__(employee_number, employee_type, ID, name, age, phone_number)
 
-    def add_employee(self, employee, employee_list):
-        employee_list.append(employee)
+    def add_employee(self, employee_name, employee_type):
+        employee = Employee(employee_type, "", 1, employee_name, 30, "123-456-7890")
+        self.employee_list.append(employee)
+
+        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\data\\workers.txt", "a") as f:
+            f.write(f"{employee_name} {employee_type}\n")
 
     def remove_employee(self, employee, employee_list):
         if employee in employee_list:

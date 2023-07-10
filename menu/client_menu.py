@@ -7,8 +7,7 @@ import sys
 class ClientMenu:
 
     def __init__(self):
-        self.client = Client("29302", "93034", "MEO", "23",
-                             "93094")  # Créez une instance de Client dans le constructeur
+        self.client = Client("29302", "93034", "MEO", "23",)
 
     def display_menu(self):
         while True:

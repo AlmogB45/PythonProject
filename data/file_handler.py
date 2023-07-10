@@ -1,4 +1,5 @@
 from entities.Product import Product
+from entities.employee import Employee
 
 
 class FileHandler:
@@ -7,7 +8,7 @@ class FileHandler:
         products = []
 
         try:
-            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt", 'r') as file:
+            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt", 'r') as file:
                 for line in file:
                     data = line.strip().split(",")
 
@@ -27,7 +28,7 @@ class FileHandler:
     @staticmethod
     def write_product_to_file(product):
         try:
-            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt",
+            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt",
                       'a') as file:
                 file.write(f"{product.name},{product.type},{product.price}\n")
         except IOError as e:
@@ -37,11 +38,11 @@ class FileHandler:
     def remove_product_from_file(product_name):
         try:
             lines = []
-            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt",
+            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt",
                       'r') as file:
                 lines = file.readlines()
 
-            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt",
+            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt",
                       'w') as file:
                 for line in lines:
                     product = line.strip().split(",")
@@ -49,3 +50,4 @@ class FileHandler:
                         file.write(line)
         except IOError as e:
             print("Error removing product from file:", e)
+

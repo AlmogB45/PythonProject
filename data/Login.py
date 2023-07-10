@@ -6,7 +6,7 @@ class Login:
         self.stored_password = None
         self.worker_type = None
 
-        with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//credentials.txt",
+        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt",
                   "r") as file:
             for line in file:
                 stored_username, stored_password, worker_type = line.strip().split(",")
@@ -17,7 +17,7 @@ class Login:
                     break
 
     def validate_credentials(self):
-        with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//credentials.txt",
+        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt",
                   "r") as file:
             for line in file:
                 stored_username, stored_password, worker_type = line.strip().split(",")

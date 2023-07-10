@@ -1,12 +1,12 @@
-from entities.employee import Employee
-import sys
-
 from entities.shift_manager import ShiftManager
-
+from entities.Product import Product
+import sys
 
 class ShiftManagerMenu:
     def __init__(self):
-        self.shift_manager = ShiftManager(employee_number=329,ID=2903,name="JOE",phone_number="2902",age=23)
+        self.shift_manager = ShiftManager(employee_number=329, ID=2903, name="JOE", phone_number="2902", age=23)
+        self.products = self.read_product_from_file()
+        self.customer_names = []
 
     def display_menu(self):
         while True:
@@ -36,46 +36,74 @@ class ShiftManagerMenu:
                 print("\n")
                 print("*** thank you and see you soon at the super ***")
                 sys.exit()
-            elif choice =="q":
+            elif choice == "q":
                 break
             else:
                 print("Invalid choice. Please try again.")
 
     def sell_product_to_customer(self):
-        # Logic to sell a product to a customer
         product_name = input("Enter the product name: ")
         customer_name = input("Enter the customer name: ")
-        product = Product(product_name)
-        customer = Customer(customer_name)
-        self.shift_manager.sell_product(product, customer)
-        print("Product sold to customer.")
+        self.purchase_product(product_name, customer_name)
+        self.customer_names.append(customer_name)
+
+    def purchase_product(self, product_name, customer_name):
+        """Purchases a product from the product.txt file.
+
+        Args:
+          product_name: The name of the product to purchase.
+          customer_name: The name of the customer purchasing the product.
+        """
+
+        # Check if the product exists in the file.
+        product = None
+        for prod in self.products:
+            if prod.name == product_name:
+                product = prod
+                break
+
+        if product is None:
+            print("Product not found.")
+            return
+
+        # Print a purchase successful message.
+        print(f"Purchase successful for {customer_name}.")
+
+    def read_product_from_file(self):
+        products = []
+
+        try:
+            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt", 'r') as file:
+                for line in file:
+                    data = line.strip().split(",")
+
+                    if len(data) == 3:
+                        name = data[0]
+                        type = data[1]
+                        price = float(data[2])  # Convert the price to float
+
+                        prod = Product(name, type, price)
+                        products.append(prod)
+
+        except IOError as e:
+            print("Error reading file:", e)
+
+        return products
+
+    def get_customers_with_purchases(self):
+        print("Customers with purchases:")
+        for customer_name in self.customer_names:
+            print(customer_name)
 
     def add_employee(self):
         # Logic to add an employee
-        employee_name = input("Enter the employee name: ")
-        employee_type = input("Enter the employee type: ")
-        employee = Employee(employee_name, employee_type)
-        self.shift_manager.add_employee(employee)
-        print("Employee added.")
+        pass
 
     def update_employee(self):
         # Logic to update an employee
-        employee_name = input("Enter the employee name: ")
-        employee_type = input("Enter the employee type: ")
-        employee = Employee(employee_name, employee_type)
-        self.shift_manager.update_employee(employee)
-        print("Employee updated.")
+        pass
 
-    def get_customers_with_purchases(self):
-        # Logic to get customers with purchases
-        purchases = self.shift_manager.get_customers_with_purchases()
-        if purchases:
-            print("Customers with purchases:")
-            for customer, products in purchases.items():
-                print(f"Customer: {customer}")
-                print("Purchased Products:")
-                for product in products:
-                    print(f"- {product}")
-                print()
-        else:
-            print("No customers with purchases.")
+
+if __name__ == "__main__":
+    shift_manager_menu = ShiftManagerMenu()
+    shift_manager_menu.display_menu()
