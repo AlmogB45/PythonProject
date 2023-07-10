@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f556e53-351b-4bf1-b5e8-dea48b791e12" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FinalSuper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FinalSuper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_07_2023_14_18_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_07_2023_14_18__Changes_.xml" beforeDir="false" />
+    <list default="true" id="5f556e53-351b-4bf1-b5e8-dea48b791e12" name="Changes" comment="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/Login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/credentials.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/credentials.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/file_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/file_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/workers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/chief_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/chief_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/cashier_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/cashier_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/chief_manager_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/chief_manager_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/client_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/client_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/shift_manager_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/shift_manager_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/products.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +64,19 @@
       <option name="presentableId" value="Default" />
       <updated>1688992778170</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager">
+      <option name="closed" value="true" />
+      <created>1689001887709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689001887709</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager" />
   </component>
 </project>
