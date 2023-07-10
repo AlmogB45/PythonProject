@@ -1,6 +1,5 @@
 from data.person import Person
 
-
 class Client(Person):
     def __init__(self, client_id, ID, name, age, phone_number,):
         self.client_id = client_id
