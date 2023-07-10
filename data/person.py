@@ -2,11 +2,10 @@ from abc import ABC
 
 
 class Person(ABC):
-    def __init__(self, ID, name, age, phone_number):
+    def __init__(self, ID, name, age):
         self.ID = ID
         self.name = name
         self.age = age
-        self.phone_number = phone_number
 
     def __str__(self):
         print(

@@ -1,3 +1,34 @@
-Apple,food
-toothpaste,home
-bread,food
+Gala Apples, Fruit, 2
+Almond Milk, Beverage, 3
+Rye Bread, Food, 4
+Orange Juice, Beverage, 2.5
+Bananas, Fruit, 1.5
+Greek Yogurt, Dairy, 2
+Organic Chicken, Meat, 8
+Cucumber, Vegetable, 1
+Cheddar Cheese, Dairy, 5
+Spaghetti Pasta, Food, 2.5
+Breakfast Cereal, Food, 3
+Carrots, Vegetable, 2
+Green Tea, Beverage, 3
+Peanut Butter, Food, 4
+Strawberries, Fruit, 3.5
+Whole Milk, Dairy, 2.5
+Wheat Bread, Food, 2
+Tomato Sauce, Food, 1.5
+Ground Beef, Meat, 6
+Spinach, Vegetable, 2.5
+Swiss Cheese, Dairy, 5.5
+Basmati Rice, Food, 3.5
+Sparkling Water, Beverage, 1.5
+Eggs, Dairy, 2.5
+Broccoli, Vegetable, 2
+Coffee, Beverage, 4.5
+Honey, Food, 3
+Salmon Fillet, Seafood, 9
+Avocado, Fruit, 2.5
+Bread,bread,4.32
+MILKY,YOGURT,3.0
+LOLIPOP,SUCAR,10.0
+MILKKK,Food,4151.0
+CRUNCH,KIJSKD,83.0

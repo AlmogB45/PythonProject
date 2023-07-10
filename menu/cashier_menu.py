@@ -1,3 +1,5 @@
+import sys
+
 class CashierMenu:
     #def __init__(self, cashier):
      #   self.cashier = cashier
@@ -5,6 +7,7 @@ class CashierMenu:
     def display_menu(self):
         while True:
             print("-------- Cashier Menu --------")
+            print("\n")
             print("1. Sell product to customer")
             print("2. Exit")
 
@@ -12,6 +15,10 @@ class CashierMenu:
             if choice == "1":
                 self.sell_product_to_customer()
             elif choice == "2":
+                print("\n")
+                print("*** thank you and see you soon at the super ***")
+                sys.exit()
+            elif choice == "q":
                 break
             else:
                 print("Invalid choice. Please try again.")

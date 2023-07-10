@@ -1,18 +1,31 @@
+from data.file_handler import FileHandler
 from data.logistic import ILogistic
 from data.manager import IManager
 from data.person import Person
+from entities.Product import Product
 from entities.employee import Employee
 
 
 class ShiftManager(Employee, ILogistic, IManager):
     def __init__(self, employee_number, ID: int, name: str, age: int, phone_number: str):
         super().__init__(employee_number, ID, name, age, phone_number)
+        self.file_handler = FileHandler()
 
-    def add_product_to_shelves(self, product, department):
-        department.add_product(product)
+    def add_product_to_shelves(self):
+        product_name = input("Enter the product name: ")
+        product_type = input("Enter the product type: ")
+        product_price = float(input("Enter the product price: "))
 
-    def remove_product_from_shelves(self, product, department):
-        department.remove_product(product)
+        product = Product(product_name, product_type, product_price)
+        self.file_handler.write_product_to_file(product)
+
+        print(f"Product '{product_name}' added to the shelves.")
+
+    def remove_product_from_shelves(self):
+        product_name = input("Enter the product name: ")
+        self.file_handler.remove_product_from_file(product_name)
+
+        print(f"Product '{product_name}' removed from the shelves.")
 
     def add_employee(self, employee, employee_list):
         employee_list.append(employee)

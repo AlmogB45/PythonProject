@@ -1,13 +1,13 @@
 from entities.employee import Employee
+import sys
+
 
 
 class ChiefManagerMenu:
-    def __init__(self, chief_manager):
-        self.chief_manager = chief_manager
-
     def display_menu(self):
         while True:
             print("-------- Chief Manager Menu --------")
+            print("\n")
             print("1. Sell product to customer")
             print("2. Add product to shelves")
             print("3. Remove product from shelves")
@@ -33,6 +33,10 @@ class ChiefManagerMenu:
             #elif choice == "7":
             #    self.get_total_daily_revenue()
             elif choice == "7":
+                print("\n")
+                print("*** thank you and see you soon at the super ***")
+                sys.exit()
+            elif choice == "q":
                 break
             else:
                 print("Invalid choice. Please try again.")
@@ -41,27 +45,27 @@ class ChiefManagerMenu:
         # Logic to sell a product to a customer
         product_name = input("Enter the product name: ")
         customer_name = input("Enter the customer name: ")
-        product = Product(product_name)
-        customer = Customer(customer_name)
-        self.chief_manager.sell_product(product, customer)
+       # product = Product(product_name)
+        #customer = Customer(customer_name)
+        #self.chief_manager.sell_product(product, customer)
         print("Product sold to customer.")
 
     def add_product_to_shelves(self):
         # Logic to add a product to the supermarket shelves
         product_name = input("Enter the product name: ")
         department_name = input("Enter the department name: ")
-        product = Product(product_name)
-        department = Department(department_name)
-        self.chief_manager.add_product_to_shelves(product, department)
+        #product = Product(product_name)
+        #department = Department(department_name)
+        #self.chief_manager.add_product_to_shelves(product, department)
         print("Product added to shelves.")
 
     def remove_product_from_shelves(self):
         # Logic to remove a product from the supermarket shelves
         product_name = input("Enter the product name: ")
         department_name = input("Enter the department name: ")
-        product = Product(product_name)
-        department = Department(department_name)
-        self.chief_manager.remove_product_from_shelves(product, department)
+        #product = Product(product_name)
+       # department = Department(department_name)
+        #self.chief_manager.remove_product_from_shelves(product, department)
         print("Product removed from shelves.")
 
     def add_employee(self):

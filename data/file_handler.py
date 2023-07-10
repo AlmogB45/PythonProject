@@ -1,26 +1,51 @@
-from entities.employee import Employee
+from entities.Product import Product
 
 
-def read_users_from_file():
-    users = []
+class FileHandler:
+    @staticmethod
+    def read_product_from_file():
+        products = []
 
-    try:
-        with open("/data/workers.txt", 'r') as file:
-            for line in file:
-                data = line.strip().split(",")
+        try:
+            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt", 'r') as file:
+                for line in file:
+                    data = line.strip().split(",")
 
-                if len(data) == 5:
-                    employee_number = data[0]
-                    employee_type = data[1]
-                    ID = data[2]
-                    name = data[3]
-                    age = data[4]
-                    phone_number = data[5]
+                    if len(data) == 3:
+                        name = data[0]
+                        type = data[1]
+                        price = float(data[2])  # Convert the price to float
 
-                    user = Employee(employee_number, employee_type, ID, name, age, phone_number)
-                    users.append(user)
+                        prod = Product(name, type, price)
+                        products.append(prod)
 
-    except IOError as e:
-        print("Error reading file:", e)
+        except IOError as e:
+            print("Error reading file:", e)
 
-    return users
+        return products
+
+    @staticmethod
+    def write_product_to_file(product):
+        try:
+            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt",
+                      'a') as file:
+                file.write(f"{product.name},{product.type},{product.price}\n")
+        except IOError as e:
+            print("Error writing to file:", e)
+
+    @staticmethod
+    def remove_product_from_file(product_name):
+        try:
+            lines = []
+            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt",
+                      'r') as file:
+                lines = file.readlines()
+
+            with open("C://Users//Mickael HALIMI//Documents//FinalSuper[1]//FinalSuper//data//products.txt",
+                      'w') as file:
+                for line in lines:
+                    product = line.strip().split(",")
+                    if product[0] != product_name:
+                        file.write(line)
+        except IOError as e:
+            print("Error removing product from file:", e)
