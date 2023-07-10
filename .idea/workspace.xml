@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fba5458-b6ee-4210-a132-e90c38226a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/Login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/credentials.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entities/Product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FinalSuper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FinalSuper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/file_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/file_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/logistic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/products.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/chief_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/chief_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/shift_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/shift_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/sorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/sorter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/Main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/Main_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/cashier_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/cashier_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/chief_manager_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/chief_manager_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/client_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/client_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/orderer_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/orderer_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/shift_manager_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/shift_manager_menu.py" afterDir="false" />
-    </list>
+    <list default="true" id="0fba5458-b6ee-4210-a132-e90c38226a95" name="Changes" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,14 +18,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Mickael HALIMI/Documents/FinalSuper[1]/FinalSuper/menu",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mickael HALIMI/Documents/FinalSuper[1]/FinalSuper/menu&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mickael HALIMI\Documents\FinalSuper[1]\FinalSuper\menu" />
@@ -96,7 +71,30 @@
       <option name="presentableId" value="Default" />
       <updated>1688923351722</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1688991195009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688991195009</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
