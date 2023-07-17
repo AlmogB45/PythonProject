@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f556e53-351b-4bf1-b5e8-dea48b791e12" name="Changes" comment="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager">
+    <list default="true" id="5f556e53-351b-4bf1-b5e8-dea48b791e12" name="Changes" comment="Fixed up the Cashier and Cashier_Menu so the methods will be in the Cashier entity and not in the menu&#10;&#10;Added extra identifications for a cashier who wish to sell a product to a costumer (i.e: Register number, ID, Name, Age, Phone number etc)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/cashier.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/cashier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/cashier_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/cashier_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/credentials.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +22,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Almog-Laptop/OneDrive/Desktop/FinalSuper&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Almog-Laptop/OneDrive/Desktop/FinalSuper",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FinalSuper" />
@@ -89,11 +90,20 @@
       <option name="project" value="LOCAL" />
       <updated>1689003055342</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed up the Cashier and Cashier_Menu so the methods will be in the Cashier entity and not in the menu&#10;&#10;Added extra identifications for a cashier who wish to sell a product to a costumer (i.e: Register number, ID, Name, Age, Phone number etc)">
+      <option name="closed" value="true" />
+      <created>1689006992823</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689006992823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager" />
+    <MESSAGE value="Fixed up the Cashier and Cashier_Menu so the methods will be in the Cashier entity and not in the menu&#10;&#10;Added extra identifications for a cashier who wish to sell a product to a costumer (i.e: Register number, ID, Name, Age, Phone number etc)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed up the Cashier and Cashier_Menu so the methods will be in the Cashier entity and not in the menu&#10;&#10;Added extra identifications for a cashier who wish to sell a product to a costumer (i.e: Register number, ID, Name, Age, Phone number etc)" />
   </component>
 </project>

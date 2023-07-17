@@ -1,8 +1,6 @@
 import sys
 from entities import cashier
 
-from entities.cashier import Cashier
-
 
 class CashierMenu:
     def display_menu(self):
