@@ -27,7 +27,3 @@ Coffee, Beverage, 4.5
 Honey, Food, 3
 Salmon Fillet, Seafood, 9
 Avocado, Fruit, 2.5
-Bread,bread,4.32
-MILKY,YOGURT,3.0
-LOLIPOP,SUCAR,10.0
-MILKKK,Food,4151.0

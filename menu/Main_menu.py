@@ -1,12 +1,18 @@
-import self as self
-
 from data.Login import Login
-from entities import chief_manager
 from menu.client_menu import ClientMenu
 from menu.orderer_menu import OrdererMenu
 from menu.cashier_menu import CashierMenu
 from menu.shift_manager_menu import ShiftManagerMenu
 from menu.chief_manager_menu import ChiefManagerMenu
+
+RESET = "\033[0m"
+RED = "\033[31m"
+GREEN = "\033[32m"
+BLUE = "\033[34m"
+
+
+def print_color(text, color):
+    print(color + text + RESET)
 
 
 class MainMenu:
@@ -21,16 +27,15 @@ class MainMenu:
 
         # Display the main menu
         while True:
-            print("-------- Super App --------")
-            print("\n")
+            print(RED, "\n-------- Super App --------\n", BLUE)
             print("1. Client")
-            print("2. Worker")
+            print("2. Worker\n", RESET)
 
             choice = input("Enter your choice: ")
             if choice == "1":
                 client_menu.display_menu()
             elif choice == "2":
-                username = input("Enter your username: ")
+                username = input("\nEnter your username: ")
                 password = input("Enter your password: ")
                 login = Login(username,password)
 
@@ -44,6 +49,7 @@ class MainMenu:
                         shift_manager_menu.display_menu()
                     elif login.worker_type == "Manager":
                         chief_manager_menu.display_menu()
+
 
 
 # Example usage

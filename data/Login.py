@@ -24,3 +24,12 @@ class Login:
                 if self.username == stored_username and self.password == stored_password:
                     return True
         return False
+
+    class EmployeeManager:
+        @staticmethod
+        def add_employee(username, password, worker_type):
+            new_credentials = f"{username},{password},{worker_type}\n"
+
+            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt", "a") as file:
+                file.write(new_credentials)
+

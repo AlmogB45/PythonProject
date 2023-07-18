@@ -1,5 +1,4 @@
 from entities.Product import Product
-from entities.employee import Employee
 
 
 class FileHandler:
@@ -50,4 +49,8 @@ class FileHandler:
                         file.write(line)
         except IOError as e:
             print("Error removing product from file:", e)
+
+    @classmethod
+    def get_customers_with_purchases(cls):
+        pass
 

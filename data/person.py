@@ -17,3 +17,4 @@ tel:{self.phone_number}
 
     def __eq__(self, other):
         pass
+

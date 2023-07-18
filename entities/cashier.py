@@ -1,15 +1,23 @@
-from data.person import Person
 from entities.Product import Product
-from entities.client import Client
 from entities.employee import Employee
+
+RESET = "\033[0m"
+RED = "\033[31m"
+GREEN = "\033[32m"
+
+
+
+def print_color(text, color):
+    print(color + text + RESET)
 
 
 class Cashier(Employee):
 
-    def __init__(self, register_number: int, employee_number: int, ID: int, name: str, age: int, phone_number: str):
-        super().__init__(employee_number, ID, name, age, phone_number)
+    def __init__(self, name: str, register_number: int, ID: int, age: int, phone_number: str):
+        super().__init__(name, ID, name, age, phone_number)
         self.register_number = register_number
         self.products = self.read_product_from_file()
+        self.customers_with_purchases = {}
 
     def sell_product_to_customer(self):
         product_name = input("Enter the product name: ")
@@ -17,7 +25,6 @@ class Cashier(Employee):
         self.purchase_product(product_name, customer_name)
 
     def purchase_product(self, product_name, customer_name):
-
         # Check if the product exists in the file.
         product = None
         for prod in self.products:
@@ -26,11 +33,16 @@ class Cashier(Employee):
                 break
 
         if product is None:
-            print("Product not found.")
+            print(RED, "Product not found.")
             return
 
         # Print a purchase successful message.
-        print(f"Purchase successful for {customer_name}.")
+        print(GREEN, f"Purchase successful for {customer_name}.")
+        # Track customers with purchases
+        if customer_name in self.customers_with_purchases:
+            self.customers_with_purchases[customer_name].append(product)
+        else:
+            self.customers_with_purchases[customer_name] = [product]
 
     def read_product_from_file(self):
         products = []
@@ -49,6 +61,8 @@ class Cashier(Employee):
                         products.append(prod)
 
         except IOError as e:
-            print("Error reading file:", e)
+            print(RED, "Error reading file:", e)
 
         return products
+
+
