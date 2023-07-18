@@ -1,3 +1,4 @@
+from data.file_handler import FileHandler
 from entities.Product import Product
 from entities.employee import Employee
 
@@ -16,7 +17,7 @@ class Cashier(Employee):
     def __init__(self, name: str, register_number: int, ID: int, age: int, phone_number: str):
         super().__init__(name, ID, name, age, phone_number)
         self.register_number = register_number
-        self.products = self.read_product_from_file()
+        self.products = FileHandler.read_product_from_file()
         self.customers_with_purchases = {}
 
     def sell_product_to_customer(self):
@@ -44,25 +45,25 @@ class Cashier(Employee):
         else:
             self.customers_with_purchases[customer_name] = [product]
 
-    def read_product_from_file(self):
-        products = []
-
-        try:
-            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt", 'r') as file:
-                for line in file:
-                    data = line.strip().split(",")
-
-                    if len(data) == 3:
-                        name = data[0]
-                        type = data[1]
-                        price = float(data[2])  # Convert the price to float
-
-                        prod = Product(name, type, price)
-                        products.append(prod)
-
-        except IOError as e:
-            print(RED, "Error reading file:", e)
-
-        return products
+    # def read_product_from_file(self):
+    #     products = []
+    #
+    #     try:
+    #         with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt", 'r') as file:
+    #             for line in file:
+    #                 data = line.strip().split(",")
+    #
+    #                 if len(data) == 3:
+    #                     name = data[0]
+    #                     type = data[1]
+    #                     price = float(data[2])  # Convert the price to float
+    #
+    #                     prod = Product(name, type, price)
+    #                     products.append(prod)
+    #
+    #     except IOError as e:
+    #         print(RED, "Error reading file:", e)
+    #
+    #     return products
 
 

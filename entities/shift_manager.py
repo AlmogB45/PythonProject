@@ -49,14 +49,14 @@ class ShiftManager(Employee, ILogistic,IManager):
         employee_name_to_remove = input("Enter employee name to remove: ")
 
         # Read all existing employee credentials
-        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt", "r") as f:
+        with open(Login.get_credentials_file_path(), "r") as f:
             lines = f.readlines()
 
         # Filter out the lines containing the employee to be removed
         updated_lines = [line for line in lines if not line.startswith(f"{employee_name_to_remove},")]
 
         # Write back the updated credentials file
-        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt", "w") as f:
+        with open(Login.get_credentials_file_path(), "w") as f:
             f.writelines(updated_lines)
 
     def sell_product_to_customer(self):

@@ -28,15 +28,15 @@ class ChiefManagerMenu:
 
             choice = input("Enter your choice: ")
             if choice == "1":
-                ChiefManager.add_employee(self)
+                self.manager.add_employee()
             elif choice == "2":
-                ChiefManager.remove_employee(self)
+                self.manager.remove_employee()
             elif choice == "3":
-                ChiefManager.print_all_products(self)
+                self.manager.print_all_products()
             elif choice == "4":
-                ShiftManager.sell_product_to_customer(self)
+                self.manager.sell_product_to_customer()
             elif choice == "5":
-                ChiefManager.get_customers_with_purchases(self)
+                self.manager.get_customers_with_purchases()
             elif choice == "7":
                 print("\n")
                 print(BLUE, "*** thank you and see you soon at the super ***")

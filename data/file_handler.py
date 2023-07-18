@@ -1,13 +1,22 @@
 from entities.Product import Product
+import os
 
 
 class FileHandler:
+
+    # returns the file path of products.txt based on user's home directory
+    @staticmethod
+    def get_products_file_path():
+        file_path = os.path.join(os.path.dirname(__file__), 'products.txt')
+        return file_path
+
     @staticmethod
     def read_product_from_file():
         products = []
 
         try:
-            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt", 'r') as file:
+            with open(FileHandler.get_products_file_path(),
+                      'r') as file:
                 for line in file:
                     data = line.strip().split(",")
 
@@ -27,7 +36,7 @@ class FileHandler:
     @staticmethod
     def write_product_to_file(product):
         try:
-            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt",
+            with open(FileHandler.get_products_file_path(),
                       'a') as file:
                 file.write(f"{product.name},{product.type},{product.price}\n")
         except IOError as e:
@@ -37,11 +46,11 @@ class FileHandler:
     def remove_product_from_file(product_name):
         try:
             lines = []
-            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt",
+            with open(FileHandler.get_products_file_path(),
                       'r') as file:
                 lines = file.readlines()
 
-            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\products.txt",
+            with open(FileHandler.get_products_file_path(),
                       'w') as file:
                 for line in lines:
                     product = line.strip().split(",")
@@ -49,8 +58,4 @@ class FileHandler:
                         file.write(line)
         except IOError as e:
             print("Error removing product from file:", e)
-
-    @classmethod
-    def get_customers_with_purchases(cls):
-        pass
 

@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f556e53-351b-4bf1-b5e8-dea48b791e12" name="Changes" comment="Reuploading">
-      <change afterPath="$PROJECT_DIR$/data/Imanager.py" afterDir="false" />
+    <list default="true" id="5f556e53-351b-4bf1-b5e8-dea48b791e12" name="Changes" comment="Fixed Shift Manager menu and methods&#10;Added colored Console GUI&#10;&#10;TODO: Fix options 3, 4, 5 in Chief Manager!!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Login.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/Login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/credentials.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/credentials.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/file_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/file_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/products.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entities/cashier.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/cashier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entities/chief_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/chief_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/entities/shift_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/shift_manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/sorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/sorter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/Main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/Main_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/cashier_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/cashier_menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/chief_manager_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/chief_manager_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/client_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/client_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/orderer_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/orderer_menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/shift_manager_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu/shift_manager_menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,13 +111,44 @@
       <option name="project" value="LOCAL" />
       <updated>1689607984632</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed Shift Manager menu and methods&#10;Added colored Console GUI&#10;&#10;TODO: Fix options 3, 4, 5 in Chief Manager!!!!">
+      <option name="closed" value="true" />
+      <created>1689700477904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689700477904</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added &quot;Sell product to costumer&quot; for Cashier and Shift_Manager menus&#10;&#10;Added &quot;Get costumers with purchase&quot; for Shift_Manager" />
     <MESSAGE value="Fixed up the Cashier and Cashier_Menu so the methods will be in the Cashier entity and not in the menu&#10;&#10;Added extra identifications for a cashier who wish to sell a product to a costumer (i.e: Register number, ID, Name, Age, Phone number etc)" />
     <MESSAGE value="Reuploading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reuploading" />
+    <MESSAGE value="Fixed Shift Manager menu and methods&#10;Added colored Console GUI&#10;&#10;TODO: Fix options 3, 4, 5 in Chief Manager!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Shift Manager menu and methods&#10;Added colored Console GUI&#10;&#10;TODO: Fix options 3, 4, 5 in Chief Manager!!!!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

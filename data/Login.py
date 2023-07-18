@@ -1,4 +1,14 @@
+import os
+
+
 class Login:
+    
+    # returns the file path of products.txt based on user's home directory
+    @staticmethod
+    def get_credentials_file_path():
+        file_path = os.path.join(os.path.dirname(__file__), 'credentials.txt')
+        return file_path
+    
     def __init__(self, username, password):
         self.username = username
         self.password = password
@@ -6,7 +16,7 @@ class Login:
         self.stored_password = None
         self.worker_type = None
 
-        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt",
+        with open(Login.get_credentials_file_path(),
                   "r") as file:
             for line in file:
                 stored_username, stored_password, worker_type = line.strip().split(",")
@@ -17,7 +27,7 @@ class Login:
                     break
 
     def validate_credentials(self):
-        with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt",
+        with open(Login.get_credentials_file_path(),
                   "r") as file:
             for line in file:
                 stored_username, stored_password, worker_type = line.strip().split(",")
@@ -30,6 +40,6 @@ class Login:
         def add_employee(username, password, worker_type):
             new_credentials = f"{username},{password},{worker_type}\n"
 
-            with open("C:\\Users\\Almog-Laptop\\OneDrive\\Desktop\\FinalSuper\\data\\credentials.txt", "a") as file:
+            with open(Login.get_credentials_file_path(), "a") as file:
                 file.write(new_credentials)
 
